@@ -1,0 +1,14 @@
+{
+  "_comentario": "Autómata DEFECTUOSO: pretende aceptar cadenas que TERMINAN en '101', pero en realidad acepta cualquier cadena que CONTENGA '101' como subcadena. Ejemplo de falla lógica: confunde sufijo con subcadena.",
+  "tipo": "AFN",
+  "alfabeto": ["0", "1"],
+  "estados": ["p0", "p1", "p2", "p3"],
+  "estado_inicial": "p0",
+  "estados_finales": ["p3"],
+  "transiciones": {
+    "p0": { "0": ["p0"], "1": ["p0", "p1"] },
+    "p1": { "0": ["p2"], "1": [] },
+    "p2": { "0": [],     "1": ["p3"] },
+    "p3": { "0": ["p3"], "1": ["p3"] }
+  }
+}

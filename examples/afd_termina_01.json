@@ -1,0 +1,12 @@
+{
+  "tipo": "AFD",
+  "alfabeto": ["0", "1"],
+  "estados": ["s0", "s1", "s2"],
+  "estado_inicial": "s0",
+  "estados_finales": ["s2"],
+  "transiciones": {
+    "s0": { "0": ["s1"], "1": ["s0"] },
+    "s1": { "0": ["s1"], "1": ["s2"] },
+    "s2": { "0": ["s1"], "1": ["s0"] }
+  }
+}
